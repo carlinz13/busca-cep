@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.endereco2 {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 650px;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Formulário */
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.endereco2 h2 {
+    color: #237A9B;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.endereco2 p {
+    font-size: 23px;
+    color: #333;
+    text-align: center;
+}
+
+#cep {
+    width: 450px;
+    max-width: 100%;
+    padding: 18px;
+    font-size: 20px;
+    border: 2px solid #237A9B;
+    border-radius: 8px;
+    outline: none;
+}
+
+#button1 {
+    padding: 18px 30px;
+    font-size: 20px;
+    background-color: #237A9B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#button1:hover {
+    background-color: #18566f;
+}
+
+/* Resultado do CEP */
+.result {
+    background-color: #edf4f7;
+    width: 100%;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.result h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.result p {
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+}
+
+/* Mensagem */
+#mensagem1 {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .endereco2 {
+        padding: 25px;
+    }
+
+    .endereco2 h2 {
+        font-size: 32px;
+    }
+
+    #cep {
+        width: 100%;
+    }
+
+    #button1 {
+        width: 100%;
+    }
+
+    .result {
+        padding: 20px;
+    }
+}
